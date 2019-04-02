@@ -1,0 +1,155 @@
+/* GENERAL ****************************************************************** */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+
+/* TYPOGRAPHY *************************************************************** */
+
+html {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Jacques Francois Shadow', sans-serif;
+    font-weight: 400;
+}
+
+.property-name {
+    font-weight: 900;
+}
+
+.country-count {
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* HEADER ******************************************************************* */
+
+header {
+    margin: 2rem;
+    text-align: center;
+}
+
+/* MAIN ********************************************************************* */
+main {
+    margin: 1rem;
+}
+
+.input-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 29rem;
+}
+
+.search-input {
+    padding: 1rem;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+};
+
+.search-input:focus, .search-input:hover {
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    outline: none;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+button:focus, button:hover {
+    background: none;
+    border: 2px solid black;
+    color: black;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.buttons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countries-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.country-div {
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flag-img {
+    width: 100%;
+}
+
+.name-p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    height: 2.5em;
+}
+
+.capital-p, .population-p {
+    margin-bottom: 1rem;
+}
+
+.languages-p {
+    height: 3.5em;
+}
+
+
+
+/* FOOTER ******************************************************************* */
+
+footer {
+    text-align: center;
+    padding: 3rem 0;
+}
+
