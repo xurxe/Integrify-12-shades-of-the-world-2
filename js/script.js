@@ -9,53 +9,59 @@ const countryCount = document.querySelector('.country-count');
 
 const countriesWrapper = document.querySelector('.countries-wrapper');
 
+/* VARIABLES ******************************************************** */
+
+let H = Math.round(Math.random() * 360);
+let S = Math.round(Math.random() * 100);
+
+let mediumL = 25;
+let mediumHSL = `hsl(${H}, ${S}%, ${mediumL}%)`
+
+let darkL = 5;
+let darkHSL = `hsl(${H}, ${S}%, ${darkL}%)`
+
+let shownCountries;
+
+
+
+/* STYLES ***************************************************************** */
+searchInput.style.background = mediumHSL;
+searchInput.style.border = `2px solid ${mediumHSL}`;
+
+searchInput.addEventListener('mouseover', function() {
+    searchInput.style.background = 'white';
+    searchInput.style.color = mediumHSL;
+
+});
+
+searchInput.addEventListener('mouseout', function() {
+    searchInput.style.background = mediumHSL;
+    searchInput.style.color = 'white';
+
+});
+
+searchInput.addEventListener('focus', function() {
+    searchInput.style.background = 'white';
+    searchInput.style.color = mediumHSL;
+
+});
+
+searchInput.addEventListener('blur', function() {
+    searchInput.style.background = mediumHSL;
+    searchInput.style.color = 'white';
+});
+
+countryCount.style.color = mediumHSL;
+
+
+
+
+
 const urlApi = 'https://restcountries.eu/rest/v2/all';
 fetch(urlApi)
     .then(response => response.json())
     .then(countries => {
-        /* VARIABLES ******************************************************** */
-
-        let H = Math.round(Math.random() * 360);
-        let S = Math.round(Math.random() * 100);
-
-        let mediumL = 25;
-        let mediumHSL = `hsl(${H}, ${S}%, ${mediumL}%)`
-
-        let darkL = 5;
-        let darkHSL = `hsl(${H}, ${S}%, ${darkL}%)`
-
-        let shownCountries;
-
-
-
-        /* STYLES ***************************************************************** */
-        searchInput.style.background = mediumHSL;
-        searchInput.style.border = `2px solid ${mediumHSL}`;
-
-        searchInput.addEventListener('mouseover', function() {
-            searchInput.style.background = 'white';
-            searchInput.style.color = mediumHSL;
-
-        });
-
-        searchInput.addEventListener('mouseout', function() {
-            searchInput.style.background = mediumHSL;
-            searchInput.style.color = 'white';
-
-        });
-
-        searchInput.addEventListener('focus', function() {
-            searchInput.style.background = 'white';
-            searchInput.style.color = mediumHSL;
-
-        });
-
-        searchInput.addEventListener('blur', function() {
-            searchInput.style.background = mediumHSL;
-            searchInput.style.color = 'white';
-        });
-
-        countryCount.style.color = mediumHSL;
+        
 
 
 
