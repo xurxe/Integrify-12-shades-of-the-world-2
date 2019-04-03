@@ -1,5 +1,0 @@
-- Go to http://restcountries.eu/
-- Go to https://restcountries.eu/rest/v2/all
-- Servers
-- http (hypertext transfer protocol)
--  
